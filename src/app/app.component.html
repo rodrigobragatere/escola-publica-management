@@ -30,7 +30,7 @@
 <div *ngFor="let escola of escolas" class="card">
   <p><strong>Nome:</strong> {{ escola.nome }}</p>
   <p><strong>Endereço:</strong> {{ escola.endereco }}</p>
-  <button mat-button (click)="escola.id ? excluirEscola(escola.id) : null" color="warn">Excluir</button>
+  <button (click)="escola.id ? excluirEscola(escola.id) : null" class="btn-excluir">Excluir</button>
 </div>
 
 <!-- Formulário para Cadastro de Turma -->
@@ -63,7 +63,7 @@
 <div *ngFor="let turma of turmas" class="card">
   <p><strong>Nome:</strong> {{ turma.nome }}</p>
   <p><strong>Série:</strong> {{ turma.serie }}</p>
-  <button mat-button (click)="turma.id ? excluirTurma(turma.id) : null" color="warm">Excluir</button>
+  <button (click)="turma.id ? excluirTurma(turma.id) : null"  class="btn-excluir">Excluir</button>
 </div>
 
 <footer>
