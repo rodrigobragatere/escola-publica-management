@@ -1,4 +1,4 @@
-# ![Logo do Projeto](/assets/logo.jpg) EscolaPublicaManagement
+# ![Logo do Projeto](src/assets/logo.jpg) EscolaPublicaManagement
 
 # EscolaPublicaManagement
 
