@@ -10,7 +10,7 @@
   <form (ngSubmit)="cadastrarEscola()" #escolaForm="ngForm">
     <div class="form-group">
       <div class="input-group">
-        <label for="idEscola">Codigo da Escola:</label>
+        <label for="idEscola">Código da Escola:</label>
         <input type="text" id="idEscola" required [(ngModel)]="novaEscola.id" name="idEscola" class="form-control">
       </div>
       <div class="input-group">
@@ -30,6 +30,7 @@
 <div *ngFor="let escola of escolas" class="card">
   <p><strong>Nome:</strong> {{ escola.nome }}</p>
   <p><strong>Endereço:</strong> {{ escola.endereco }}</p>
+  <button (click)="escola.id ? excluirEscola(escola.id) : null" class="btn btn-danger">Excluir</button>
 </div>
 
 <!-- Formulário para Cadastro de Turma -->
@@ -37,6 +38,10 @@
   <h2>Cadastrar Turma</h2>
   <form (ngSubmit)="cadastrarTurma()" #turmaForm="ngForm">
     <div class="form-group">
+      <div class="input-group">
+        <label for="idTurma">Código Turma:</label>
+        <input type="text" id="idTurma" required [(ngModel)]="novaTurma.id" name="idTurma" class="form-control">
+      </div>
       <div class="input-group">
         <label for="nomeTurma">Nome da Turma:</label>
         <input type="text" id="nomeTurma" required [(ngModel)]="novaTurma.nome" name="nomeTurma" class="form-control">
@@ -46,8 +51,8 @@
         <input type="text" id="serieTurma" required [(ngModel)]="novaTurma.serie" name="serieTurma" class="form-control">
       </div>
       <div class="input-group">
-        <label for="idEscola">Código da Escola:</label>
-        <input type="text" id="idEscola" required [(ngModel)]="novaTurma.escolaId" name="idEscola" class="form-control">
+        <label for="idEscolaTurma">Código da Escola:</label>
+        <input type="text" id="idEscolaTurma" required [(ngModel)]="novaTurma.escolaId" name="idEscola" class="form-control">
       </div>
     </div>
     <button type="submit" class="btn">Cadastrar Turma</button>
@@ -58,6 +63,7 @@
 <div *ngFor="let turma of turmas" class="card">
   <p><strong>Nome:</strong> {{ turma.nome }}</p>
   <p><strong>Série:</strong> {{ turma.serie }}</p>
+  <button (click)="turma.id ? excluirTurma(turma.id) : null" class="btn btn-danger">Excluir</button>
 </div>
 
 <footer>
