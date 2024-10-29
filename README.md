@@ -1,4 +1,4 @@
-# ![Logo do Projeto](src/assets/logo.jpg)
+# ![Logo do Projeto](src/assets/logo.jpg) 
 
 Este projeto foi gerado com a [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.10.
 
@@ -53,3 +53,6 @@ Execute `ng e2e` para realizar os testes de ponta a ponta usando uma plataforma 
 ## Ajuda Adicional
 
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou acesse a página [Visão Geral e Referência de Comandos do Angular CLI](https://angular.dev/tools/cli).
+
+
+[def]: src/assets/logo.jpg
