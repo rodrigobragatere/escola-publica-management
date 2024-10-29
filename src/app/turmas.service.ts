@@ -7,7 +7,7 @@ import { Turma } from './models/turma';
   providedIn: 'root'
 })
 export class TurmasService {
-  private apiUrl = 'http://localhost:3000/turmas'; // Ajuste conforme sua API
+  private apiUrl = 'http://localhost:4200'; // Ajuste conforme sua API
 
   constructor(private http: HttpClient) { }
 

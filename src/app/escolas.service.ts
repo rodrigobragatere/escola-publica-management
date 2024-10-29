@@ -7,7 +7,7 @@ import { Escola } from './models/escola';
   providedIn: 'root'
 })
 export class EscolasService {
-  private apiUrl = 'http://localhost:3000/escolas'; // Ajuste conforme sua API
+  private apiUrl = 'http://localhost:4200'; // Ajuste conforme sua API
 
   constructor(private http: HttpClient) { }
 
