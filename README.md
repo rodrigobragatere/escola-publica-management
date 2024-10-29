@@ -1,4 +1,5 @@
 # ![Logo do Projeto](src/assets/logo.jpg) 
+# EscolaPublicaManagement
 
 Este projeto foi gerado com a [Angular CLI](https://github.com/angular/angular-cli) versão 18.2.10.
 
