@@ -10,6 +10,10 @@
   <form (ngSubmit)="cadastrarEscola()" #escolaForm="ngForm">
     <div class="form-group">
       <div class="input-group">
+        <label for="idEscola">Codigo da Escola:</label>
+        <input type="text" id="idEscola" required [(ngModel)]="novaEscola.id" name="idEscola" class="form-control">
+      </div>
+      <div class="input-group">
         <label for="nomeEscola">Nome da Escola:</label>
         <input type="text" id="nomeEscola" required [(ngModel)]="novaEscola.nome" name="nomeEscola" class="form-control">
       </div>
@@ -40,6 +44,10 @@
       <div class="input-group">
         <label for="serieTurma">Série:</label>
         <input type="text" id="serieTurma" required [(ngModel)]="novaTurma.serie" name="serieTurma" class="form-control">
+      </div>
+      <div class="input-group">
+        <label for="idEscola">Código da Escola:</label>
+        <input type="text" id="idEscola" required [(ngModel)]="novaTurma.escolaId" name="idEscola" class="form-control">
       </div>
     </div>
     <button type="submit" class="btn">Cadastrar Turma</button>

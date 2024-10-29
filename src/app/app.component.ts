@@ -17,22 +17,22 @@ import { FormsModule } from '@angular/forms'; // Importando FormsModule
 export class AppComponent implements OnInit {
   escolas: Escola[] = [];
   turmas: Turma[] = [];
-  novaEscola = { nome: '', endereco: '' };
-  novaTurma = { nome: '', serie: '',escolaId:0 };
+  novaEscola = { id:'', nome: '', endereco: '' };
+  novaTurma = { nome: '', serie: '',escolaId:'' };
 
   constructor(private http: HttpClient) {}
 
   cadastrarEscola() {
     if (this.novaEscola.nome && this.novaEscola.endereco) {
       this.escolas.push({ ...this.novaEscola });
-      this.novaEscola = { nome: '', endereco: '' }; // Limpa o formulário
+      this.novaEscola = { id:'',nome: '', endereco: '' }; // Limpa o formulário
     }
   }
 
   cadastrarTurma() {
     if (this.novaTurma.nome && this.novaTurma.serie) {
       this.turmas.push({ ...this.novaTurma });
-      this.novaTurma = { nome: '', serie: '',escolaId:0  }; // Limpa o formulário
+      this.novaTurma = { nome: '', serie: '',escolaId:''  }; // Limpa o formulário
     }
   }
 

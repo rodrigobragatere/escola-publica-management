@@ -1,6 +1,6 @@
 export interface Turma {
-    id?: number;
+    id?: string;
     nome: string;
     serie: string;
-    escolaId: number;
+    escolaId: string;
   }
