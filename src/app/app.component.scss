@@ -1,55 +1,59 @@
 header {
-    justify-content: center; // Centraliza horizontalmente a imagem e o texto
-    text-align: center; // Centraliza o texto
-    display: flex;
-    align-items: center; // Alinha verticalmente a imagem e o texto
-    padding: 10px;
-    background-color: #52a4f5; // Cor de fundo do cabeçalho
-  }
-  
-  .logo {
-    width: 150px; // Largura da logo
-    height: auto; // Mantém a proporção
-    margin-right: 10px; // Espaço entre o título e a logo
-  }
-  
-  h1 {
-    text-align: center;  // Centraliza o conteúdo do cabeçalho
-    color: #ffffff; // Cor do texto do cabeçalho alterada para branco
-    margin: 20px 0; // Margem superior e inferior
-  }
-  
-  h2 {
-    color: #333; // Cor dos subtítulos
-    margin: 20px 0; // Margem superior e inferior
-  }
-  
-  // Estilos dos cartões
-  .card {
-    border: 1px solid #ddd; // Borda do cartão
-    border-radius: 8px; // Bordas arredondadas
-    padding: 15px; // Espaçamento interno
-    margin: 10px 0; // Margem superior e inferior
-    background-color: #f9f9f9; // Cor de fundo
-  }
-  
-  // Estilos de parágrafos
-  p {
-    margin: 8px 0; // Margem superior e inferior
-  }
-  
-  // Estilos de texto em negrito
-  strong {
-    color: #444; // Cor do texto em negrito
-  }
-  
-  footer {
-    text-align: center; // Centraliza o texto
-    padding: 20px; // Espaçamento interno
-    background-color: #52a4f5; // Cor de fundo do footer
-    border-top: 1px solid #ccc; // Linha superior
-    position: relative; // Para garantir que o footer não se sobreponha ao conteúdo
-    bottom: 0; // Fica na parte inferior
-    width: 100%; // Largura total
-    color: #ffffff; // Cor do texto do footer alterada para branco (opcional)
-  }
+  display: flex; // Usa flexbox para o layout
+  align-items: center; // Alinha verticalmente a imagem e o texto
+  padding: 10px;
+  background-color: #000000; // Cor de fundo do cabeçalho
+  justify-content: space-between; // Espaça os itens para que a logo fique à esquerda e o título centralizado
+}
+
+.logo {
+  width: auto; // Largura da logo
+  height: auto; // Mantém a proporção 
+}
+
+h1 {
+  color: #ffffff; // Cor do texto do cabeçalho alterada para branco
+  margin: 0; // Remove margens superior e inferior para melhor alinhamento
+  flex-grow: 1; // Permite que o título ocupe o espaço restante
+  text-align: center; // Centraliza o texto do título
+}
+
+h2 {
+  color: #333; // Cor dos subtítulos
+  margin: 20px 0; // Margem superior e inferior
+}
+
+// Estilos dos cartões
+.card {
+  border: 1px solid #ddd; // Borda do cartão
+  border-radius: 8px; // Bordas arredondadas
+  padding: 15px; // Espaçamento interno
+  margin: 10px 0; // Margem superior e inferior
+  background-color: #f9f9f9; // Cor de fundo
+}
+
+// Estilos de parágrafos
+p {
+  margin: 8px 0; // Margem superior e inferior
+}
+
+// Estilos de texto em negrito
+strong {
+  color: #444; // Cor do texto em negrito
+}
+
+footer {
+  text-align: center; // Centraliza o texto
+  padding: 20px; // Espaçamento interno
+  background-color: #000000; // Cor de fundo do footer
+  border-top: 1px solid #ccc; // Linha superior
+  position: relative; // Para garantir que o footer não se sobreponha ao conteúdo
+  bottom: 0; // Fica na parte inferior
+  width: 100%; // Largura total
+  color: #ffffff; // Cor do texto do footer alterada para branco (opcional)
+}
+
+.responsive-image {
+  width: 100%; /* Faz a imagem ocupar toda a largura do seu contêiner */
+  height: auto; /* Mantém a proporção */
+}
