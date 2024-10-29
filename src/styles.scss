@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* // styles.scss
+
+// Variáveis de cores
+$primary-color: #3f51b5;
+$secondary-color: #f50057;
+$background-color: #f9f9f9;
+$text-color: #333;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+    text-align: center; // Centraliza o texto
+  }
+
+.app-header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+
+  .logo {
+    width: 100px; // Ajuste conforme necessário
+    height: auto; // Mantém a proporção
+    display: block; // Garante que a imagem seja um bloco
+    margin: 0 auto; // Centraliza a imagem
+    border: 1px solid red; // Adiciona uma borda para visualização
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: $primary-color;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.app-footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+} */

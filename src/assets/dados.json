@@ -1,0 +1,28 @@
+{
+  "escolas": [
+    {
+      "id": 1,
+      "nome": "Escola Municipal João da Silva",
+      "endereco": "Rua das Flores, 123"
+    },
+    {
+      "id": 2,
+      "nome": "Escola Estadual Maria Oliveira",
+      "endereco": "Avenida das Palmeiras, 456"
+    }
+  ],
+  "turmas": [
+    {
+      "id": 1,
+      "nome": "1º Ano A",
+      "serie": "1º Ano do Ensino Fundamental",
+      "escolaId": 1
+    },
+    {
+      "id": 2,
+      "nome": "2º Ano B",
+      "serie": "2º Ano do Ensino Fundamental",
+      "escolaId": 2
+    }
+  ]
+}
