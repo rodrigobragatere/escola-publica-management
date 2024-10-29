@@ -2,14 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button'; // Importando MatButtonModule
+import { MatInputModule } from '@angular/material/input'; // Importando MatInputModule
+import { MatCardModule } from '@angular/material/card'; // Importando MatCardModule
 import { Escola } from './models/escola';
 import { Turma } from './models/turma';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, RouterOutlet, FormsModule],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    RouterOutlet,
+    FormsModule,
+    MatButtonModule, // Adicionando o módulo do botão
+    MatInputModule, // Adicionando o módulo de input
+    MatCardModule // Adicionando o módulo de card
+  ],
   templateUrl: './app.component.html', // Verifique se este caminho está correto
   styleUrls: ['./app.component.scss']
 })

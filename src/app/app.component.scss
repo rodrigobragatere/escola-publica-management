@@ -21,6 +21,12 @@ h1 {
 h2 {
   color: #333; // Cor dos subtítulos
   margin: 20px 0; // Margem superior e inferior
+  text-align: center; 
+}
+
+h3 {
+  color: #333; // Cor dos subtítulos
+  margin: 20px 0; // Margem superior e inferior 
 }
 
 // Estilos dos cartões
@@ -68,7 +74,7 @@ footer {
 .input-group {
   flex: 1; // Permite que cada input ocupe espaço igual
   min-width: 200px; // Largura mínima para os inputs
-  margin-right: 10px; // Espaçamento entre os inputs
+  margin-right: 20px; // Espaçamento entre os inputs
 }
 
 .input-group label {
