@@ -25,17 +25,31 @@ h2 {
 }
 
 h3 {
-  color: #333; // Cor dos subtítulos
+  color: #7c1177; // Cor dos subtítulos
   margin: 20px 0 20px 20px; // Margem superior e inferior 
 }
 
 // Estilos dos cartões
-.card {
+.card-container {
   border: 1px solid #ddd; // Borda do cartão
   border-radius: 8px; // Bordas arredondadas
+  margin: 10px 10px 10px 10px; // Margem superior e inferior
   padding: 15px; // Espaçamento interno
-  margin: 10px 0; // Margem superior e inferior
   background-color: #f9f9f9; // Cor de fundo
+  display: 100%;
+  gap: 16px; /* Espaçamento entre as divs */      
+}
+.card-container-listar {
+  border: 1px solid #ddd; // Borda do cartão
+  border-radius: 8px; // Bordas arredondadas
+  margin: 10px 10px 10px 10px; // Margem superior e inferior
+  padding: 15px; // Espaçamento interno
+  background-color: #f9f9f9; // Cor de fundo
+  display: flex;
+  gap: 20px; /* Espaçamento entre as divs */   
+  text-align: center;
+  justify-content: center; // Centraliza os itens horizontalmente
+  align-items: center; // Centraliza os itens verticalmente 
 }
 
 // Estilos de parágrafos
@@ -67,21 +81,23 @@ footer {
 // Estilos dos formulários
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .input-group {
   margin-bottom: 15px;
+  width: 100%; // Garante que o contêiner ocupe a largura total
 }
+
 
 .input-group label {
   margin-bottom: 5px;
 }
 
 .input-group input {
-  width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  width: 100%; // Faz o input ocupar a largura total da linha
 }
 
 button[color="warn"] {

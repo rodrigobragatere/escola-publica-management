@@ -9,6 +9,11 @@
       "id": 2,
       "nome": "Escola Estadual Maria Oliveira",
       "endereco": "Avenida das Palmeiras, 456"
+    },
+    {
+      "id": 3,
+      "nome": "Escola Estadual Roger Milar",
+      "endereco": "Avenida da luz, 56"
     }
   ],
   "turmas": [
@@ -23,6 +28,12 @@
       "nome": "2º Ano B",
       "serie": "2º Ano do Ensino Fundamental",
       "escolaId": 2
+    },
+    {
+      "id": 3,
+      "nome": "3º Ano B",
+      "serie": "3º Ano do Ensino Fundamental",
+      "escolaId": 3
     }
   ]
 }

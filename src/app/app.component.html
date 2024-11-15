@@ -6,21 +6,21 @@
 <h1>Gerenciamento Escolar</h1>
 
 <!-- Formulário para Cadastro de Escola -->
-<div class="card">
-  <h2>Cadastrar Escola</h2>
+<h2>Cadastrar Escola</h2>
+<div class="card-container">  
   <form (ngSubmit)="cadastrarEscola()" #escolaForm="ngForm">
     <div class="form-group">
       <div class="input-group">
         <label for="idEscola">Código da Escola:</label>
-        <input type="text" id="idEscola" required [(ngModel)]="novaEscola.id" name="idEscola" class="form-control">
+        <input type="text" id="idEscola" required [(ngModel)]="novaEscola.id" name="idEscola" >
       </div>
       <div class="input-group">
         <label for="nomeEscola">Nome da Escola:</label>
-        <input type="text" id="nomeEscola" required [(ngModel)]="novaEscola.nome" name="nomeEscola" class="form-control">
+        <input type="text" id="nomeEscola" required [(ngModel)]="novaEscola.nome" name="nomeEscola" >
       </div>
       <div class="input-group">
         <label for="enderecoEscola">Endereço:</label>
-        <input type="text" id="enderecoEscola" required [(ngModel)]="novaEscola.endereco" name="enderecoEscola" class="form-control">
+        <input type="text" id="enderecoEscola" required [(ngModel)]="novaEscola.endereco" name="enderecoEscola" >
       </div>
     </div>
     <button mat-raised-button color="primary" type="submit">Cadastrar Escola</button>
@@ -28,8 +28,8 @@
 </div>
 
 <h3>Listar Escolas</h3>
-<div class="card-container">
-<div *ngFor="let escola of escolas" class="card">
+<div class="card-container-listar">
+<div *ngFor="let escola of escolas" >
   <p><strong>Nome:</strong> {{ escola.nome }}</p>
   <p><strong>Endereço:</strong> {{ escola.endereco }}</p>
   <button mat-raised-button color="warn" (click)="escola.id ? excluirEscola(escola.id) : null" >Excluir</button>
@@ -37,25 +37,25 @@
 </div>
 
 <!-- Formulário para Cadastro de Turma -->
-<div class="card">
-  <h2>Cadastrar Turma</h2>
+<h2>Cadastrar Turma</h2>
+<div class="card-container"> 
   <form (ngSubmit)="cadastrarTurma()" #turmaForm="ngForm">
     <div class="form-group">
       <div class="input-group">
         <label for="idTurma">Código Turma:</label>
-        <input type="text" id="idTurma" required [(ngModel)]="novaTurma.id" name="idTurma" class="form-control">
+        <input type="text" id="idTurma" required [(ngModel)]="novaTurma.id" name="idTurma" >
       </div>
       <div class="input-group">
         <label for="nomeTurma">Nome da Turma:</label>
-        <input type="text" id="nomeTurma" required [(ngModel)]="novaTurma.nome" name="nomeTurma" class="form-control">
+        <input type="text" id="nomeTurma" required [(ngModel)]="novaTurma.nome" name="nomeTurma" >
       </div>
       <div class="input-group">
         <label for="serieTurma">Série:</label>
-        <input type="text" id="serieTurma" required [(ngModel)]="novaTurma.serie" name="serieTurma" class="form-control">
+        <input type="text" id="serieTurma" required [(ngModel)]="novaTurma.serie" name="serieTurma" >
       </div>
       <div class="input-group">
         <label for="idEscolaTurma">Código da Escola:</label>
-        <input type="text" id="idEscolaTurma" required [(ngModel)]="novaTurma.escolaId" name="idEscola" class="form-control">
+        <input type="text" id="idEscolaTurma" required [(ngModel)]="novaTurma.escolaId" name="idEscola" >
       </div>
     </div>
    <button mat-raised-button color="primary" type="submit">Cadastrar Turma</button>
@@ -63,8 +63,8 @@
 </div>
 
 <h3>Listar Turmas</h3>
-<div class="card-container">
-<div *ngFor="let turma of turmas" class="card">
+<div class="card-container-listar">
+<div *ngFor="let turma of turmas">
   <p><strong>Nome:</strong> {{ turma.nome }}</p>
   <p><strong>Série:</strong> {{ turma.serie }}</p>
   <button mat-raised-button color="warn" (click)="turma.id ? excluirTurma(turma.id) : null"  class="btn-excluir">Excluir</button>
