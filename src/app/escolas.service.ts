@@ -7,12 +7,12 @@ import { Escola } from './models/escola';
   providedIn: 'root'
 })
 export class EscolasService {
-  private apiUrl = 'http://localhost:4200'; // Ajuste conforme sua API
-
+  private jsonUrl = 'assets/dados.json';
+  
   constructor(private http: HttpClient) { }
 
-  getEscolas(): Observable<Escola[]> {
-    return this.http.get<Escola[]>(this.apiUrl);
+  getEscolas(): Observable<any> {
+    return this.http.get(this.jsonUrl);
   }
 
   // Adicione outros métodos conforme necessário
