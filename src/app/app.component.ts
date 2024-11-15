@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button'; // Importando MatButtonModule
 import { MatInputModule } from '@angular/material/input'; // Importando MatInputModule
 import { MatCardModule } from '@angular/material/card'; // Importando MatCardModule
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { Escola } from './models/escola';
 import { Turma } from './models/turma';
 
@@ -19,7 +20,8 @@ import { Turma } from './models/turma';
     FormsModule,
     MatButtonModule, // Adicionando o módulo do botão
     MatInputModule, // Adicionando o módulo de input
-    MatCardModule // Adicionando o módulo de card
+    MatCardModule, // Adicionando o módulo de card
+    MatFormFieldModule
   ],
   templateUrl: './app.component.html', // Verifique se este caminho está correto
   styleUrls: ['./app.component.scss']

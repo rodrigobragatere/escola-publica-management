@@ -66,28 +66,25 @@ footer {
 
 // Estilos dos formulários
 .form-group {
-  display: flex; // Usa flexbox para alinhar os inputs
-  flex-wrap: wrap; // Permite que os inputs se movam para a linha seguinte se não houver espaço
-  margin-bottom: 15px; // Margem inferior para espaçamento entre grupos de inputs
+  display: flex;
+  flex-direction: column;
 }
 
 .input-group {
-  flex: 1; // Permite que cada input ocupe espaço igual
-  min-width: 200px; // Largura mínima para os inputs
-  margin-right: 20px; // Espaçamento entre os inputs
+  margin-bottom: 15px;
 }
 
 .input-group label {
-  display: block; // Faz o label ocupar toda a largura
-  margin-bottom: 5px; // Margem inferior para espaçamento entre o label e o input
+  margin-bottom: 5px;
 }
 
 .input-group input {
-  width: 100%; // Faz o input ocupar toda a largura do seu contêiner
-  padding: 8px; // Espaçamento interno do input
-  border: 1px solid #ccc; // Borda do input
-  border-radius: 4px; // Bordas arredondadas do input
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
-.btn-excluir {
-  color: red; /* Define a cor do texto como vermelho */
+
+button[color="warn"] {
+  background-color: #f44336 !important; /* Vermelho */
+  color: #fff !important; /* Texto branco */
 }
